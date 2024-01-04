@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lir9CN60L+TZ0rBGix21V34RcTiccCmsoGNkhJGi9m0=",
+  "Source": "LaSonda.Api",
+  "BasePath": "_content/LaSonda.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

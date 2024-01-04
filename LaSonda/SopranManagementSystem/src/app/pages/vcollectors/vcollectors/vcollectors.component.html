@@ -1,0 +1,77 @@
+  <!-- <button mat-button color="primary">Aggiorna</button> -->
+  <mat-toolbar>
+    <span>Censimento</span>
+  </mat-toolbar>
+  <section style="width: 100%;">
+      <button (click)="updateList()" mat-button color="accent" class="backbroundButton">Aggiorna</button>
+  </section>
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Cerca" #input>
+</mat-form-field>
+<mat-progress-bar *ngIf="isLoading" mode="indeterminate" style="height: 5px;"></mat-progress-bar>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+    <!-- <table mat-table  matSort> -->
+      <ng-container matColumnDef="iD_Wazuh" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header [ngStyle]="{'width': '0%'}"> ID_Wazuh </th>
+        <td mat-cell *matCellDef="let row" class="classColorText"> {{ row.iD_Wazuh }} </td>
+      </ng-container>
+      <!-- ID Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let row" class="classColorText"> {{row.name}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="ip" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Ip </th>
+        <td mat-cell *matCellDef="let row" class="classColorText"> {{row.ip }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="scanDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnScanDate"> ScanDate </th>
+        <td mat-cell *matCellDef="let row" class="hideColumnScanDate classColorText"> {{row.scanDate | date:"dd/MM/yyyy HH:mm:ss"}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="os" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnOs" [ngStyle]="{'width': '50%'}"> Os </th>
+        <td mat-cell *matCellDef="let row"  class="hideColumnOs classColorText"> {{row.os }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="lastKeepAlive" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnLastKeepAlive"> LastKeepAlive </th>
+        <td mat-cell *matCellDef="let row"  class="hideColumnLastKeepAlive classColorText"> {{row.lastKeepAlive | date:"dd/MM/yyyy HH:mm:ss" }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="id" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnId" [ngStyle]="{'width': '0%'}"> Id </th>
+        <td mat-cell *matCellDef="let row" class="hideColumn" class="hideColumnId classColorText"> {{row.id }} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="status" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnStatus"> Status </th>
+        <td mat-cell *matCellDef="let row" class="hideColumnStatus classColorText"> {{row.status }} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="group" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="hideColumnGrop"> Group </th>
+        <td mat-cell *matCellDef="let row"  class="hideColumnGrop classColorText "> {{row.group }} </td>
+      </ng-container>
+
+      <tr  mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'classError': row.executionstatus=='Fallito' }" ></tr> -->
+      <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngStyle]="{'background-color': row.colore}" [ngClass]="getTypeOfClass(row)" [ngClass]="manageClassActive(row)"  (click)="openDialog(row)"></tr> -->
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="classBackcolorGreen" ></tr>
+  
+      <!-- Row shown when there is no matching data. -->
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr>
+    </table>
+    <mat-paginator [length]="listLength"
+                    [pageSize]="100"
+                    [pageSizeOptions]="[5, 8, 25, 100]">
+    </mat-paginator>
+  </div>
+
+  

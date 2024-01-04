@@ -1,0 +1,39 @@
+/* .child{
+    width: 49%;
+} 
+
+mat-form-field{
+    width: 450px;
+    width: 90%;
+} */
+.active{
+    background-color: grey;
+    color:black !important;;
+}
+
+.mat-row:hover {
+    background-color:rgb(189, 187, 187);
+    color:black !important;
+  }
+
+  .mat-row:hover tr {
+    color:black;
+  }
+
+
+/* 
+  .child-1{
+    background-color: orange;
+    }
+    .child-2{
+    background-color: yellow;
+    }
+    .child-3{
+    background-color: green;
+    }
+    
+    .container{
+     margin: 15px;
+     height:200px;
+     border:2px solid red;
+    } */

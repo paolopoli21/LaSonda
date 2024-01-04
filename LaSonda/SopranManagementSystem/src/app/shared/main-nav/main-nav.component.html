@@ -1,0 +1,116 @@
+<div class="main-container">
+  <mat-sidenav-container class="sidenav-container backgroundLogin">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar style="background-color: rgb(1, 29, 29);">Utente {{ userName }}</mat-toolbar>
+      <mat-nav-list>
+        <!-- <span >
+          <a mat-list-item routerLink="/home/monitoring" routerLinkActive="active" >
+            <i class="fa fa-list-alt"></i> 
+            Monitoring
+          </a>
+        </span> -->
+
+        <span >
+          <a mat-list-item routerLink="/home/monitoringHub" routerLinkActive="active" >
+            <i class="fa fa-list-alt"></i> 
+            Monitoring
+          </a>
+        </span>
+        <!-- <span >
+          <a mat-list-item routerLink="/home/monitoringRealTime" routerLinkActive="active" >
+            <i class="fa fa-list-alt"></i> 
+            Monitoring
+          </a>
+        </span> -->
+        <span >
+          <a mat-list-item routerLink="/home/tracer" routerLinkActive="active" *ngIf="isAdmin()">
+            <i class="fa fa-eye"></i> 
+            Tracer
+          </a>
+        </span>
+        <span>
+          <a mat-list-item routerLink="/home/selectdb" routerLinkActive="active" *ngIf="isAdmin()">
+            <i class="fa fa-database"></i> 
+            Select Db 
+          </a>
+        </span>
+        <span >
+          <a mat-list-item routerLink="/home/dataprocess" routerLinkActive="active" >
+            <i class="fa fa-clipboard"></i>
+            Data process 
+          </a>
+        </span>
+        <span >
+          <a mat-list-item routerLink="/home/backupSql" routerLinkActive="active" >
+            <!-- <i class="fa fa-clipboard"></i> -->
+            <mat-icon>backup</mat-icon>
+            Backup Sql 
+          </a>
+        </span>
+
+        <span >
+          <a mat-list-item routerLink="/home/vulnerability" routerLinkActive="active" >
+            <!-- <i class="fa fa-clipboard"></i> -->
+            <mat-icon>report_problem</mat-icon>
+            Vulnerability
+          </a>
+        </span>
+        <!-- <span>
+          <a mat-list-item routerLink="/home/prioritacoloriHub" routerLinkActive="active" >
+            <i class="fa fa-clipboard"></i>
+            Data process
+          </a>
+        </span> -->
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <div style="width: 100%;">
+          <!-- <span>Sopran </span> -->
+          <!-- <img
+            src="../assets/images/logos/logosopran.jpg"
+            style="max-width: 12%; display: block;"
+            alt="Photo"
+          /> -->
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="flex-end">
+          <button  mat-icon-button routerLink="/home">
+            <mat-icon>home</mat-icon>
+          </button>
+          <button  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>person</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="goToUsers()" *ngIf="isAdmin()">
+              <mat-icon>manage_accounts</mat-icon>
+              <span>Utenti</span>
+            </button>
+            <!-- <button mat-menu-item (click)="goToUsersHub()" *ngIf="isAdmin()">
+              <mat-icon>manage_accounts</mat-icon>
+              <span>Users</span>
+            </button> -->
+            <button mat-menu-item (click) = "logout()">
+              <mat-icon>logout</mat-icon>
+              <span>Logout</span>
+            </button>
+          </mat-menu>
+        </div>
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+

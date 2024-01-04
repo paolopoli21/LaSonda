@@ -1,0 +1,59 @@
+
+  <mat-toolbar>Dati monitoraggio</mat-toolbar>
+  <mat-card>
+    <span class="titolo">
+      Processname
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.processname }}
+    </span>
+    <br>
+    <span class="titolo">
+      Instance:
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.instance }}
+    </span>
+    <br>
+    <span class="titolo">
+      LastRun:
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.lastRun }}
+    </span>
+    <br>
+    <span class="titolo">
+      Runduration:
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.runduration }}
+    </span>
+    <br>
+    <span class="titolo">
+      Executionstatus:
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.executionstatus }}
+    </span>
+    <br>
+    <span class="titolo">
+      NextRun
+    </span>
+    <br>
+    <span class="descrizione">
+      {{ data?.montoring?.nextRun }}
+    </span>
+    <div mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Close</button>
+    </div>
+  </mat-card>
+
+
+
+
+

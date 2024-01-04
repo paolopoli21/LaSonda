@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LaSonda.Api.props" />
+</Project>

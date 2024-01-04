@@ -1,0 +1,71 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .login-page {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #d4d4da;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url("../../../assets/images/login/login-register.jpg");
+    /* background-image: url("../../../assets/images/login/sopraninoLogo.png");  */
+  }
+  
+  mat-card {
+    width: 30%;
+    margin: 10% auto;
+    border-radius: 8px;
+  }
+  mat-form-field, mat-checkbox {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  mat-card-content {
+    margin-top: 20px;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .error-snackbar {
+    background-color: fuchsia !important;
+  }
+
+  .mat-snack-bar-container.pizza-party {
+    color: rgb(5, 2, 3);
+  }
+  
+  /* .mat-snack-bar-container .flex {
+    display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+  } */
+
+  .mat-snack-bar-handset{
+    background-color: fuchsia !important;
+  }
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+  }
+ .margin-bottom{
+  margin-bottom: 10px;
+ }

@@ -1,0 +1,98 @@
+<div class="login-page">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="login()">Login</button>
+    </mat-menu>
+
+    <span style="margin-left: 40px;">
+        La Sonda
+    </span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+
+
+<mat-grid-list cols="5" rowHeight="230px" class="image-grid">
+  <mat-grid-tile colspan="5" class="upper-image-tile margin-bottom">
+    <div>
+      <img width="400px"
+        src="../assets/images/logos/logogrupponew1.png"
+        style="max-width: 100%; max-height: 100%; display: block;"
+        alt="Photo"
+      />
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="5" class="margin-bottom-2">
+    <div>
+      <img width="300px"
+        src="../assets/images/login/sopraninoLogo.png"
+        style="max-width: 100%; max-height: 100%; display: block"
+        alt="Photo"
+        class="margin-bottom"
+      />
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<!-- <mat-grid-list cols="1" rowHeight="450px">
+  <mat-progress-bar *ngIf="isLoading" mode="indeterminate" style="height: 5px;"></mat-progress-bar>
+       <mat-grid-tile >
+        <mat-card class="mat-elevation-z12">
+          <mat-card-title style="text-align:center;">La Sonda</mat-card-title>
+          <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+            <mat-tab label="Login">
+                <mat-card-content>
+                  <form [formGroup]="loginForm" (ngSubmit)="singIn()">
+                    <mat-form-field>
+                        <input matInput 
+                        type="text"
+                        placeholder="userName"  
+                        formControlName="userName"
+                        >
+                        <mat-error>Username è obbligatorio</mat-error>
+                        <mat-error>
+                          Username deve avere un lunghezza minima  di 2 caratteri
+                        </mat-error>
+                      <mat-icon matSuffix>perm_identity</mat-icon>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                      <input
+                        matInput
+                        placeholder="Password"
+                        type="password"
+                        formControlName="password"
+                        autocomplete="doNotAutoComplete"
+                       >
+                        <mat-error>
+                          Password obbligatoria
+                        </mat-error>
+                        <mat-error>
+                          Password deve avere un lunghezza minima  di 4 caratteri
+                        </mat-error>
+                      <mat-icon matSuffix>lock</mat-icon>
+                    </mat-form-field>
+                    <br>
+                    <mat-checkbox>Ricorda!</mat-checkbox>
+                    <!-- <mat-error *ngIf="!isLogIn">
+                      Password o Username non corretti
+                    </mat-error> -->
+                    <!--  <button
+                      mat-raised-button
+                      color="primary"
+                      class="login-button"
+                      [disabled]="!isValidLoginOk()"
+                      >
+                      Entra
+                    </button>
+                  </form>
+                </mat-card-content>
+            </mat-tab>
+          </mat-tab-group>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+</div>
+
+  

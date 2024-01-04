@@ -1,0 +1,139 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .mat-mdc-form-field{
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width:  11%;
+  }
+
+  .classColorText{
+    color: rgba(94, 94, 94, 0.633) !important;
+  }
+
+  /* .classBackcolorRed{
+    background-color: red;
+  } */
+
+  .classBackcolorGreen{
+    background-color:#CCFFCC;
+  }
+
+  
+
+  .classError{
+    background-color: red;
+    color: white;
+  } 
+
+  .classWarning{
+    background-color: rgb(173, 202, 8);
+    color: rgb(238, 231, 231) !important;
+  }  
+
+  .activeMenu{
+    background-color: rgb(168, 179, 179);
+  }
+  
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .backbroundButton{
+    background-color:  #3636da;
+    float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .active{
+    background-color: rgb(5, 5, 5);
+    color:black !important;;
+  }
+
+  .mat-row:hover {
+    background-color:rgb(242, 237, 237);
+    cursor: pointer;
+  }
+
+  tr:hover{
+    color:rgba(236, 229, 229, 0.992);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .hideColumnGrop{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .hideColumnStatus{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hideColumnId{
+      display: none;
+    }
+   
+  }
+
+  @media screen and (max-width: 900px) {
+    .hideColumnLastKeepAlive{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .hideColumnOs{
+      display: none;
+    }
+  }
+ 
+  @media screen and (max-width: 800px) {
+    .hideColumnScanDate{
+      display: none;
+    }
+  }
+
+  
+
+
+

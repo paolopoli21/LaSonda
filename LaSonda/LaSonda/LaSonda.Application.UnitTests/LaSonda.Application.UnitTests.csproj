@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.4.23259.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0-preview.4.23259.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.2" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="Shouldly" Version="4.2.1" />
+    <PackageReference Include="xunit" Version="2.5.0-pre.22" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.0-pre.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaSonda.Application\LaSonda.Application.csproj" />
+    <ProjectReference Include="..\LaSonda.Infrastructure\LaSonda.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

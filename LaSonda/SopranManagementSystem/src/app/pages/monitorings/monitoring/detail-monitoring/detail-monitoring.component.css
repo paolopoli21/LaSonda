@@ -1,0 +1,14 @@
+.titolo{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.descrizione{
+    font-size: 12px;
+    color:rgb(199, 197, 197)
+}
+
+.classColorText{
+    color: black !important;
+  }
+
+

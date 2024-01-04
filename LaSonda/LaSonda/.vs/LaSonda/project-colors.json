@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "84d870bb-1d17-4418-aabf-2b928d8d9a9b": {
+      "ProjectGuid": "84d870bb-1d17-4418-aabf-2b928d8d9a9b",
+      "DisplayName": "LaSonda.Application",
+      "ColorIndex": 0
+    },
+    "8e8e9a57-b75e-42a8-a955-9d12cc15e9c5": {
+      "ProjectGuid": "8e8e9a57-b75e-42a8-a955-9d12cc15e9c5",
+      "DisplayName": "LaSonda.Domain",
+      "ColorIndex": 1
+    },
+    "24d7193e-cdc5-4585-ba9b-141332919b8b": {
+      "ProjectGuid": "24d7193e-cdc5-4585-ba9b-141332919b8b",
+      "DisplayName": "LaSonda.Api",
+      "ColorIndex": 2
+    },
+    "7fafd125-f188-43ca-940b-2b54f9d34a24": {
+      "ProjectGuid": "7fafd125-f188-43ca-940b-2b54f9d34a24",
+      "DisplayName": "LaSonda.Infrastructure",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "File esterni",
+      "ColorIndex": -1
+    },
+    "addad0a0-9f96-4d16-a39a-52fc812f997e": {
+      "ProjectGuid": "addad0a0-9f96-4d16-a39a-52fc812f997e",
+      "DisplayName": "IntranetSopran.Infrastructure",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

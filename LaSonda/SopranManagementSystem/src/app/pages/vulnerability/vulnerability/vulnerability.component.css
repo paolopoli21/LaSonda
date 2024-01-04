@@ -1,0 +1,122 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .mat-mdc-form-field{
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width:  11%;
+  }
+
+  .classColorText{
+    color: black !important;
+  }
+
+  .classBackcolorRed{
+    background-color: red;
+  }
+
+  .classBackcolorGreen{
+    background-color:#CCFFCC;
+  }
+
+  .classError{
+    background-color: red;
+    /* font-size: 10px; */
+    color: white;
+  } 
+
+  .classWarning{
+    background-color: rgb(173, 202, 8);
+    /* font-size: 10px; */
+    color: black !important;
+  } 
+
+  /* .mat-cell {
+    color: rgb(230, 9, 9);
+  } */
+
+  .activeMenu{
+    background-color: rgb(168, 179, 179);
+  }
+  
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .backbroundButton{
+    background-color:  #3636da;
+    float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .active{
+    background-color: rgb(5, 5, 5);
+    color:black !important;;
+  }
+
+  .mat-row:hover {
+    background-color:rgb(112, 108, 108);
+    /* color:black !important; */
+    cursor: pointer;
+  }
+
+  .mat-row:hover tr {
+    color:rgb(119, 118, 118);
+  }
+
+  @media screen and (max-width: 500px) {
+    .hideColumn{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .hideColumnDuraton{
+      display: none;
+    }
+    .hideColumNext{
+      display: none;
+    }
+  }
+
+  
+
+
+
